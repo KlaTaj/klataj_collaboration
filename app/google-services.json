@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "15464648286",
+    "firebase_url": "https://klataj-40e51.firebaseio.com",
+    "project_id": "klataj-40e51",
+    "storage_bucket": "klataj-40e51.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15464648286:android:314caf27f7ca10f2316ecf",
+        "android_client_info": {
+          "package_name": "com.example.klataj"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15464648286-44sgtare80232vs2jbo7g3cpem95diha.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.klataj",
+            "certificate_hash": "32ec06527acdeb88877262f2dd04a2f87ad0f9d9"
+          }
+        },
+        {
+          "client_id": "15464648286-lqg508fn55rs12et277e72g6qq1pbvt0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOKe0K99f2P66WgNETIMTv8w5QF0zq-_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15464648286-lqg508fn55rs12et277e72g6qq1pbvt0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity"
+    android:background="@drawable/gradient1">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="122dp"
+        android:layout_marginLeft="122dp"
+
+        android:layout_marginTop="261dp"
+        android:layout_marginEnd="113dp"
+        android:layout_marginRight="113dp"
+        android:gravity="center"
+        android:text="KlaTaj"
+        android:textColor="#FFFFFF"
+        android:textSize="72sp"
+        app:fontFamily="@font/seaweed_script" />
+
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginBottom="46dp"
+        android:background="@drawable/rounded_button_main"
+        android:gravity="center"
+        android:text="BEZWEN YON NOUVO KONT"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_create"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginBottom="46dp"
+        android:gravity="center"
+        android:background="@drawable/rounded_button_main"
+        android:text="MWEN DEJA GEN YON KONT"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>
