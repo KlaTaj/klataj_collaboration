@@ -29,6 +29,8 @@ Klataj is basically an chat application that let you converse quickly with famil
 
 **Required Must-have Stories**
 
+* User can create a new account (sign up)
+* User can login
 * User can send and receive messages quickly
 * User can edit profile
 * User can make an add request
