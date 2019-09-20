@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">KlaTaj</string>
+    <string name="dekonekte">Dekonekte</string>
+    <string name="kont_param_t">Kont paramèt</string>
+    <string name="tout_itilizat">tout itilizatè</string>
+    <string name="klataj">KlaTaj</string>
+    <string name="bezwen_yon_nouvo_kont">BEZWEN YON NOUVO KONT</string>
+    <string name="mwen_deja_gen_yon_kont">MWEN DEJA GEN YON KONT</string>
+    <string name="konekte_ak_kont_ou">Konekte ak kont ou</string>
 </resources>

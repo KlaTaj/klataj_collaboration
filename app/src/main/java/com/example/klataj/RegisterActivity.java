@@ -5,28 +5,25 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 public class RegisterActivity extends AppCompatActivity {
 
     private TextInputLayout pseudo;
     private TextInputLayout imel;
     private TextInputLayout modpas;
-    TextView txt_register, txt_signup;
-    Button btn_register;
+    private TextView txt_register;
+    private TextView txt_signup;
+    private Button btn_register;
 
     private FirebaseAuth mAuth;
 
@@ -55,13 +52,12 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-               String pseudo_name = pseudo.getEditText().getText().toString();
-               String imel_register = imel.getEditText().getText().toString();
-               String modpas_register = modpas.getEditText().getText().toString();
+                String pseudo_name = pseudo.getEditText().getText().toString();
+                String imel_register = imel.getEditText().getText().toString();
+                String modpas_register = modpas.getEditText().getText().toString();
 
 
-               register_user(pseudo_name, imel_register,modpas_register);
-
+                register_user(pseudo_name, imel_register,modpas_register);
             }
         });
     }
