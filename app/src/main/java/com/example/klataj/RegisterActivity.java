@@ -44,6 +44,15 @@ public class RegisterActivity extends AppCompatActivity {
         txt_register = (TextView) findViewById(R.id.txt_register);
         txt_signup = (TextView) findViewById(R.id.txt_signup);
 
+        txt_signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(RegisterActivity.this,LoginActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
+
         // findViewById for button
         btn_register = (Button) findViewById(R.id.btn_register);
 
@@ -71,6 +80,7 @@ public class RegisterActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
 
                             Intent intent = new Intent(RegisterActivity.this,MainActivity.class);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             startActivity(intent);
                             fileList();
 

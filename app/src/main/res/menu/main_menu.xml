@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/main_kont_paramet"
+        android:title="Kont paramet" />
+    <item
+        android:id="@+id/kont_tout_itlilizate"
+        android:title="Itilizate" />
+    <item
+        android:id="@+id/main_dekonekte"
+        android:title="Dekonekte" />
+</menu>
