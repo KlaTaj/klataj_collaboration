@@ -1,9 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SettingsActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settings_image"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="119dp"
+        android:layout_marginLeft="119dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginRight="121dp"
+        android:src="@drawable/default_image_profile" />
+
+    <TextView
+        android:id="@+id/settings_pseudo"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings_image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="false"
+        android:layout_marginStart="141dp"
+        android:layout_marginLeft="141dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginRight="135dp"
+        android:text="@string/non_ti_non"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/settings_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings_pseudo"
+        android:layout_centerInParent="true"
+        android:text="@string/mwen_salye_nou_m_ap_itilize_klataj" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings_status"
+
+        android:layout_centerInParent="true"
+        android:layout_marginTop="99dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/design_default_color_primary_dark"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/chanje_imaj"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button2"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp"
+        android:background="@android:color/holo_red_dark"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/chanje_stati"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
