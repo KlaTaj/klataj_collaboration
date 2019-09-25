@@ -6,5 +6,10 @@
     <string name="klataj">KlaTaj</string>
     <string name="bezwen_yon_nouvo_kont">BEZWEN YON NOUVO KONT</string>
     <string name="mwen_deja_gen_yon_kont">MWEN DEJA GEN YON KONT</string>
-    <string name="konekte_ak_kont_ou">Konekte ak kont ou</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="chat_page">Chat page</string>
+
+
 </resources>

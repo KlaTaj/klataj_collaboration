@@ -3,7 +3,7 @@ package com.example.klataj;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
+
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -25,6 +25,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText modpas;
     private Button button_log;
     private TextView txt_register;
+    private TextView txt_signin;
 
     private ProgressDialog progressDialog;
 
@@ -41,13 +42,17 @@ public class LoginActivity extends AppCompatActivity {
         progressDialog = new ProgressDialog(this);
 
         imel = (EditText) findViewById(R.id.email_log);
+
         modpas = (EditText) findViewById(R.id.password_log);
 
         txt_register = (TextView) findViewById(R.id.txt_register);
-        txt_register.setOnClickListener(new View.OnClickListener() {
+        txt_signin = (TextView) findViewById(R.id.txt_signin);
+        txt_signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(i);
+                finish();
             }
         });
 
