@@ -36,9 +36,12 @@ public class RegisterActivity extends AppCompatActivity {
     private TextView txt_signup;
     private Button btn_register;
 
+    //progressDialog
     private ProgressDialog progressDialog;
 
+    // Firebase Auth
     private FirebaseAuth mAuth;
+
     private DatabaseReference database;
 
     @Override
@@ -105,7 +108,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                             FirebaseUser current_user = FirebaseAuth.getInstance().getCurrentUser();
                             String uid = current_user.getUid();
-                            database = FirebaseDatabase.getInstance().getReference().child("users").child("uid");
+                            database = FirebaseDatabase.getInstance().getReference().child("Users").child(uid);
 
                             HashMap<String,String> userMap = new HashMap<>();
                             userMap.put("name", pseudo_name);
@@ -117,13 +120,16 @@ public class RegisterActivity extends AppCompatActivity {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
 
-                                    progressDialog.dismiss();
+                                    if (task.isSuccessful()) {
+
+                                        progressDialog.dismiss();
 
 
-                                    Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
-                                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                                    startActivity(intent);
-                                    finish();
+                                        Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
+                                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                        startActivity(intent);
+                                        finish();
+                                    }
 
                                 }
                             });
