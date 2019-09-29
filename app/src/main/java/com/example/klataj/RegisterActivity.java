@@ -29,6 +29,8 @@ import java.util.HashMap;
 
 public class RegisterActivity extends AppCompatActivity {
 
+
+
     private EditText pseudo;
     private EditText imel;
     private EditText modpas;
@@ -110,7 +112,7 @@ public class RegisterActivity extends AppCompatActivity {
                             String uid = current_user.getUid();
                             database = FirebaseDatabase.getInstance().getReference().child("Users").child(uid);
 
-                            HashMap<String,String> userMap = new HashMap<>();
+                            HashMap<String, String> userMap = new HashMap<>();
                             userMap.put("name", pseudo_name);
                             userMap.put("status", "Mwen salye nou, m'ap itilize KlaTaj");
                             userMap.put("image", "default");
@@ -141,14 +143,17 @@ public class RegisterActivity extends AppCompatActivity {
                         } else {
                             progressDialog.hide();
 
-                            Toast.makeText(RegisterActivity.this, "Ou paka konekte. Tanpri tcheke fòm lan epi eseye ankò.",
-                                    Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(RegisterActivity.this, "Ou paka konekte. Tanpri tcheke fòm lan epi eseye ankò.",
+                                                Toast.LENGTH_SHORT).show();
+
+                                    }
+
+                                }
+                            });
+
 
                         }
 
 
-                    }
-                });
-    }
 
-}
+                    }

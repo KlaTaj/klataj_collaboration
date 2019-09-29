@@ -3,9 +3,12 @@ package com.example.klataj;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
+
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -15,7 +18,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import org.w3c.dom.Text;
+
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -29,19 +32,26 @@ public class SettingsActivity extends AppCompatActivity {
     private TextView name_txt;
     private TextView status_txt;
 
+    private Button status_btn;
+    private Button image_btn;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
         circleImageView = (CircleImageView) findViewById(R.id.settings_image);
+        status_btn = (Button) findViewById(R.id.status_btn);
         name_txt = (TextView) findViewById(R.id.settings_pseudo);
         status_txt = (TextView) findViewById(R.id.settings_status);
 
         currentUser = FirebaseAuth.getInstance().getCurrentUser();
 
         String current_uid = currentUser.getUid();
+
         userDatabase = FirebaseDatabase.getInstance().getReference().child("Users").child(current_uid);
+
         userDatabase.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -60,5 +70,18 @@ public class SettingsActivity extends AppCompatActivity {
 
             }
         });
+
+        status_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String status_value = status_txt.getText().toString();
+                Intent intent = new Intent(SettingsActivity.this, StatusActivity.class);
+                intent.putExtra("status_value",status_value);
+                startActivity(intent);
+                finish();
+
+            }
+        });
+
     }
 }

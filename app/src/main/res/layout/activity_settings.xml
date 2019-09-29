@@ -18,14 +18,14 @@
         android:layout_centerInParent="true"
         android:layout_marginStart="119dp"
         android:layout_marginLeft="119dp"
-        android:layout_marginTop="85dp"
+        android:layout_marginTop="70dp"
         android:layout_marginEnd="121dp"
         android:layout_marginRight="121dp"
         android:src="@drawable/default_image_profile" />
 
     <TextView
         android:id="@+id/settings_pseudo"
-        android:layout_width="135dp"
+        android:layout_width="191dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/settings_image"
         android:layout_alignParentStart="true"
@@ -33,12 +33,12 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_centerInParent="true"
-        android:layout_centerHorizontal="false"
-        android:layout_marginStart="141dp"
-        android:layout_marginLeft="141dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginLeft="114dp"
         android:layout_marginTop="45dp"
-        android:layout_marginEnd="135dp"
-        android:layout_marginRight="135dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginRight="106dp"
+        android:gravity="center"
         android:text="@string/non_ti_non"
         android:textColor="#000000"
         android:textSize="24sp"
@@ -53,7 +53,7 @@
         android:text="@string/mwen_salye_nou_m_ap_itilize_klataj" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/image_btn"
         android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/settings_status"
@@ -68,10 +68,10 @@
         android:textColor="#FFFFFF" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/status_btn"
         android:layout_width="140dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/button2"
+        android:layout_below="@id/image_btn"
         android:layout_centerInParent="true"
         android:layout_marginBottom="30dp"
         android:background="@android:color/holo_red_dark"

@@ -1,9 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".StatusActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <include layout="@layout/app_bar_layout" android:id="@+id/status_appbar"/>
+
+    <EditText
+        android:id="@+id/status_imput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status_appbar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Estati ou"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/status_save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status_imput"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="21dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="SOVE CHANJMAN YO"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

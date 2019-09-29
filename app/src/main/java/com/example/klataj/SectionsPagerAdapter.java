@@ -51,7 +51,7 @@ class SectionsPagerAdapter extends FragmentPagerAdapter {
             case 2:
                 return "Gwoup";
             case 3:
-                return "Aplikasyon";
+                return "Demand";
 
             default:
                 return null;
