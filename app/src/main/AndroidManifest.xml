@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.klataj">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_logo_klataj1_round"
@@ -9,13 +12,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".StatusActivity"
-            android:parentActivityName=".SettingsActivity"></activity>
+        <activity android:name=".UsersActivity"></activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".StatusActivity"
+            android:parentActivityName=".SettingsActivity" />
         <activity android:name=".SettingsActivity" />
-        <activity android:name=".LoginActivity"
-            android:parentActivityName=".StartActivity"/>
-        <activity android:name=".RegisterActivity"
-            android:parentActivityName=".StartActivity"/>
+        <activity
+            android:name=".LoginActivity"
+            android:parentActivityName=".StartActivity" />
+        <activity
+            android:name=".RegisterActivity"
+            android:parentActivityName=".StartActivity" />
         <activity android:name=".StartActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
