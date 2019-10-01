@@ -103,9 +103,16 @@ public class MainActivity extends AppCompatActivity {
 
            Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
            startActivity(intent);
-           finish();
+
 
        }
+         if (item.getItemId() == R.id.kont_tout_itlilizate){
+
+             Intent intent = new Intent(MainActivity.this, UsersActivity.class);
+             startActivity(intent);
+
+
+         }
 
 
         return true;

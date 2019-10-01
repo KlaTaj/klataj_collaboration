@@ -47,4 +47,7 @@ dependencies {
 
     implementation 'com.squareup.picasso:picasso:2.5.2'
 
+    implementation 'androidx.recyclerview:recyclerview:1.0.0-beta01'
+    // FirebaseUI for Firebase Realtime Database
+    implementation 'com.firebaseui:firebase-ui-database:6.0.2'
 }

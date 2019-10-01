@@ -48,6 +48,7 @@ public class SettingsActivity extends AppCompatActivity {
     private Button status_btn;
     private Button image_btn;
 
+
     private static final int GALLERY_PICK = 1;
 
     //storage Firebase
