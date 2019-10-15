@@ -6,6 +6,19 @@ public class Users {
     public String image;
     public String status;
 
+
+
+    public Users(String name, String image, String status,String thumb_image) {
+        this.name = name;
+        this.image = image;
+        this.status = status;
+
+    }
+
+    public Users(){
+
+    }
+
     public String getName() {
         return name;
     }
@@ -29,4 +42,6 @@ public class Users {
     public void setStatus(String status) {
         this.status = status;
     }
+
+
 }
